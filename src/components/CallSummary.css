@@ -1,0 +1,51 @@
+.call-summary {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.summary-header h2 {
+  margin: 0 10px 0 0;
+}
+
+.info-icon {
+  cursor: pointer;
+}
+
+.summary-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+/*   
+  .header-row p:nth-child(1),
+  .table-row p:nth-child(1) {
+    /* Style for empty cells (icons/alignment) */
+/* } */
+
+.data1,
+.data2,
+.data {
+  padding-right: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.call-summary {
+  background: white !important;
+}

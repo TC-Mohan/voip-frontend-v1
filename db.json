@@ -1,0 +1,23 @@
+{
+  "post": [
+    {
+      "name": "Live PBX",
+      "buyer": "",
+      "type": "",
+      "number": "123",
+      "timeout": "123",
+      "ivr": "123",
+      "recording": "",
+      "timezone": "",
+      "operation": "",
+      "capon": "",
+      "callcap": "",
+      "monthly": "",
+      "daily": "",
+      "hourly": "",
+      "max": "",
+      "duplicate": "",
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+/* CSS for making the first column sticky */
+
+.rdt_TableHeadRow > :first-child,
+.rdt_TableBody > .rdt_TableRow > :first-child 
+{
+    position: sticky;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    
+}
+
