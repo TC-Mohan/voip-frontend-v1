@@ -1,0 +1,6 @@
+projectKey=voip-frontend-v1
+serverUrl=http://localhost:9000
+serverVersion=25.3.0.104237
+dashboardUrl=http://localhost:9000/dashboard?id=voip-frontend-v1
+ceTaskId=52c87057-44a9-447d-bd9e-864e702b4000
+ceTaskUrl=http://localhost:9000/api/ce/task?id=52c87057-44a9-447d-bd9e-864e702b4000

@@ -108,6 +108,7 @@
     ]
   },
   "devDependencies": {
+    "sonarqube-scanner": "^4.2.8",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4"
   }

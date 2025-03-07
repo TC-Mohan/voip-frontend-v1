@@ -94,9 +94,9 @@ import "react-toastify/dist/ReactToastify.css";
 import BalanceCheck from "./components/BalanceCheck.jsx";
 import { DecryptToken } from "./helper/Constants.js";
 const userToken = localStorage.getItem("psx_token");
-  const decodedToken = DecryptToken(userToken);
+const decodedToken = DecryptToken(userToken);
 
- const RenderLayout = (props) => {
+const RenderLayout = (props) => {
   return (
     <>
       <Layout>{props}</Layout>
@@ -116,7 +116,7 @@ function App() {
       <Router>
         <Routes>
           {/* <Route path="/" element={<Login />} /> */}
-          <Route path="/" element={<Logs/>} />
+          <Route path="/" element={<Logs />} />
           {/* <Route path="/sign-up" element={<SignUpForm/>} /> */}
           <Route path="/forget_password" element={<ForgotPassword />} />
           <Route path="/resetpassword" element={<Resetpasword />} />
@@ -137,11 +137,12 @@ function App() {
           /> */}
 
           <Route element={<PrivateRoute />}>
-          {/* <Route path="/" element={<Logs/>} /> */}
+            {/* <Route path="/" element={<Logs/>} /> */}
             <Route path="/dashboard" element={RenderLayout(<Dashboard />)} />
             {/* <Route path="/balance" element={RenderLayout(<BalanceCheck  userId={1}  />)} /> */}
 
             <Route path="/profile" element={RenderLayout(<UserProfile />)} />
+            {/* <Route path="/newpath" element={RenderLayout(<UserProfile />)} /> */}
             <Route
               path="/purchaseplan"
               element={RenderLayout(<Purchaseplan />)}
@@ -195,11 +196,11 @@ function App() {
               element={RenderLayout(<ManageTargets />)}
             /> */}
             <Route
-      path="/manage-targets"
-      element={RenderLayout(
-        <ManageTargets user_id={decodedToken?.user_id || null} />
-      )}
-    />
+              path="/manage-targets"
+              element={RenderLayout(
+                <ManageTargets user_id={decodedToken?.user_id || null} />
+              )}
+            />
             <Route
               path="/manage-groups"
               element={RenderLayout(<ManageGroups />)}
