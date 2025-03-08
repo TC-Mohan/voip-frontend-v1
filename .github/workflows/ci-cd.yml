@@ -36,7 +36,7 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: "https://88b4-2409-40c4-28a-34ed-947e-bff1-17ad-3b60.ngrok-free.app"
+          SONAR_HOST_URL: "https://3c62-2409-40c4-28a-34ed-947e-bff1-17ad-3b60.ngrok-free.app"
         with:
           args: >
             -Dsonar.qualitygate.wait=true
