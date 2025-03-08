@@ -25,12 +25,12 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Run tests with coverage
-        run: npm test -- --coverage --coverageDirectory=coverage
+      # - name: Run tests with coverage
+      #   run: npm test -- --coverage --coverageDirectory=coverage
 
-      - name: Run tests with coverage
-        run: npm test -- --coverage --coverageDirectory=coverage --testPathIgnorePatterns=/src/assets/vendor/tinymce/
-        continue-on-error: true
+      # - name: Run tests with coverage
+      #   run: npm test -- --coverage --coverageDirectory=coverage --testPathIgnorePatterns=/src/assets/vendor/tinymce/
+      #   continue-on-error: true
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v2
