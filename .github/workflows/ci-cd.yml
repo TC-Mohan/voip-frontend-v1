@@ -57,6 +57,12 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Install @ant-design/icons
+        run: npm install @ant-design/icons
+
+      - name: Install Babel plugin
+        run: npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
       - name: Build the app
         run: npm run build
 
